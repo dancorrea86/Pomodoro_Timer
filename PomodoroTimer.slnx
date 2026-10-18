@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/PomodoroTimer.Data/PomodoroTimer.Data.csproj" />
+    <Project Path="src/PomodoroTimer.Domain/PomodoroTimer.Domain.csproj" />
+    <Project Path="src/PomodoroTimer.Services/PomodoroTimer.Services.csproj" />
+    <Project Path="src/PomodoroTimer.UI/PomodoroTimer.UI.csproj" />
+  </Folder>
+</Solution>

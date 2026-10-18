@@ -1,7 +1,7 @@
 # Task Checklist: Pomodoro Timer Desktop App
 
 ## Phase 1: Setup & Data Layer
-- [ ] **T-101:** Initialize .NET 10 WinForms solution and create projects in `src/`.
+- [x] **T-101:** Initialize .NET 10 WinForms solution and create projects in `src/`.
 - [ ] **T-102:** Install NuGet packages: `Microsoft.EntityFrameworkCore.Sqlite`, `Microsoft.EntityFrameworkCore.Tools`, `Microsoft.Extensions.DependencyInjection`.
 - [ ] **T-103:** Implement `Domain` entities (`User`, `UserSettings`, `TaskItem`, `PomodoroSession`).
 - [ ] **T-104:** Create `PomodoroDbContext` in `PomodoroTimer.Data` with Fluent API mappings.
