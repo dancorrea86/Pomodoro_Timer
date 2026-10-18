@@ -8,7 +8,7 @@
 - [x] **T-105:** Create initial EF Core Migration (`InitialCreate`) and test SQLite database generation.
 
 ## Phase 2: Core Services & Logic
-- [ ] **T-201:** Implement `AuthService` with password hashing (PBKDF2/BCrypt) and register logic.
+- [x] **T-201:** Implement `AuthService` with password hashing (PBKDF2/BCrypt) and register logic.
 - [ ] **T-202:** Implement `PomodoroEngine` service handling state machine (Start, Pause, Reset, Tick, State Transition).
 - [ ] **T-203:** Implement `TaskService` for CRUD operations on tasks and session linking.
 - [ ] **T-204:** Write unit tests for `PomodoroEngine` cycle transitions (Focus -> Short Break -> Long Break).
