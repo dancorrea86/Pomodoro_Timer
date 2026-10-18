@@ -3,9 +3,9 @@
 ## Phase 1: Setup & Data Layer
 - [x] **T-101:** Initialize .NET 10 WinForms solution and create projects in `src/`.
 - [x] **T-102:** Install NuGet packages: `Microsoft.EntityFrameworkCore.Sqlite`, `Microsoft.EntityFrameworkCore.Tools`, `Microsoft.Extensions.DependencyInjection`.
-- [ ] **T-103:** Implement `Domain` entities (`User`, `UserSettings`, `TaskItem`, `PomodoroSession`).
-- [ ] **T-104:** Create `PomodoroDbContext` in `PomodoroTimer.Data` with Fluent API mappings.
-- [ ] **T-105:** Create initial EF Core Migration (`InitialCreate`) and test SQLite database generation.
+- [x] **T-103:** Implement `Domain` entities (`User`, `UserSettings`, `TaskItem`, `PomodoroSession`).
+- [x] **T-104:** Create `PomodoroDbContext` in `PomodoroTimer.Data` with Fluent API mappings.
+- [x] **T-105:** Create initial EF Core Migration (`InitialCreate`) and test SQLite database generation.
 
 ## Phase 2: Core Services & Logic
 - [ ] **T-201:** Implement `AuthService` with password hashing (PBKDF2/BCrypt) and register logic.

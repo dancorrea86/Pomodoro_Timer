@@ -72,10 +72,10 @@ dotnet run --project src/PomodoroTimer.UI
 
 - [x] **Fase 1: Setup & Data Layer**
   - [x] `T-101`: Inicialização da solução .NET 10 e criação dos projetos em `src/`.
-  - [ ] `T-102`: Instalação de pacotes NuGet (EF Core, SQLite, DI).
-  - [ ] `T-103`: Criação das entidades no `Domain`.
-  - [ ] `T-104`: Configuração do `PomodoroDbContext` no `Data`.
-  - [ ] `T-105`: Criação das Migrations iniciais do SQLite.
+  - [x] `T-102`: Instalação de pacotes NuGet (EF Core, SQLite, DI).
+  - [x] `T-103`: Criação das entidades no `Domain`.
+  - [x] `T-104`: Configuração do `PomodoroDbContext` no `Data`.
+  - [x] `T-105`: Criação das Migrations iniciais do SQLite.
 - [ ] **Fase 2: Core Services & Logic** (Autenticação, Engine do Timer, Gerenciamento de Tarefas e Testes Unitários)
 - [ ] **Fase 3: UI Development** (Telas de Login, Timer, Configurações e Navegação)
 - [ ] **Fase 4: Polish & Integration** (Tema Dark, Validação e Testes E2E)

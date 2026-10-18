@@ -5,4 +5,7 @@
     <Project Path="src/PomodoroTimer.Services/PomodoroTimer.Services.csproj" />
     <Project Path="src/PomodoroTimer.UI/PomodoroTimer.UI.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/PomodoroTimer.Tests/PomodoroTimer.Tests.csproj" />
+  </Folder>
 </Solution>
