@@ -10,8 +10,8 @@
 ## Phase 2: Core Services & Logic
 - [x] **T-201:** Implement `AuthService` with password hashing (PBKDF2/BCrypt) and register logic.
 - [x] **T-202:** Implement `PomodoroEngine` service handling state machine (Start, Pause, Reset, Tick, State Transition).
-- [ ] **T-203:** Implement `TaskService` for CRUD operations on tasks and session linking.
-- [ ] **T-204:** Write unit tests for `PomodoroEngine` cycle transitions (Focus -> Short Break -> Long Break).
+- [x] **T-203:** Implement `TaskService` for CRUD operations on tasks and session linking.
+- [x] **T-204:** Write unit tests for `PomodoroEngine` cycle transitions (Focus -> Short Break -> Long Break).
 
 ## Phase 3: UI Development (WinForms Modern Design)
 - [ ] **T-301:** Configure DI Container in `Program.cs` to inject DbContext, Services, and Views.

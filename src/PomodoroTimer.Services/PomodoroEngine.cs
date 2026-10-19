@@ -1,5 +1,6 @@
 using PomodoroTimer.Domain.Entities;
 using PomodoroTimer.Domain.Enums;
+using PomodoroTimer.Domain.Events;
 using PomodoroTimer.Domain.Interfaces;
 
 namespace PomodoroTimer.Services;
@@ -7,6 +8,8 @@ namespace PomodoroTimer.Services;
 public class PomodoroEngine : IPomodoroEngine
 {
     private readonly UserSettings _settings;
+
+    public event EventHandler<PomodoroCompletedEventArgs>? SessionCompleted;
 
     public PomodoroEngine() : this(new UserSettings())
     {
@@ -25,6 +28,7 @@ public class PomodoroEngine : IPomodoroEngine
     public int RemainingSeconds => RemainingSecondsInternal;
     public TimerState State { get; private set; }
     public int FocusCycleCount { get; private set; }
+
 
     private int RemainingSecondsInternal { get; set; }
 
@@ -100,6 +104,8 @@ public class PomodoroEngine : IPomodoroEngine
 
     private void AdvanceCycle()
     {
+        var completedMode = CurrentMode;
+
         if (CurrentMode == SessionType.Focus)
         {
             FocusCycleCount++;
@@ -121,6 +127,8 @@ public class PomodoroEngine : IPomodoroEngine
 
         RemainingSecondsInternal = GetDurationFor(CurrentMode);
         State = TimerState.Paused;
+
+        SessionCompleted?.Invoke(this, new PomodoroCompletedEventArgs(completedMode, CurrentMode, FocusCycleCount));
     }
 
     private int GetDurationFor(SessionType mode)

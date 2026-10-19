@@ -1,5 +1,6 @@
 using PomodoroTimer.Domain.Entities;
 using PomodoroTimer.Domain.Enums;
+using PomodoroTimer.Domain.Events;
 
 namespace PomodoroTimer.Domain.Interfaces;
 
@@ -10,6 +11,8 @@ public interface IPomodoroEngine
     TimerState State { get; }
     int FocusCycleCount { get; }
 
+    event EventHandler<PomodoroCompletedEventArgs>? SessionCompleted;
+
     void Start();
     void Pause();
     void Reset();
@@ -17,3 +20,4 @@ public interface IPomodoroEngine
     void Tick(int secondsElapsed);
     void ApplySettings(UserSettings settings);
 }
+
